@@ -1,0 +1,13 @@
+#root {
+  padding: 0.5rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login-left-view{
+  background-color: gray;
+}
+  
+.login-right-view{
+  background-color: darkgray;
+}
