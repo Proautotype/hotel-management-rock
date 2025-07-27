@@ -1,15 +1,14 @@
+import { appPaths } from "@/assets/paths";
+import Navbar from "@/components/custome/Navbar";
+import AuthTemplate from "@/views/layout/AuthTemplate";
+import DashboardTemplate from "@/views/layout/DashboardTemplate";
+import DashboardMain from "@/views/pages/DashboardMain";
+import Otp from "@/views/pages/OTP";
+import ManageRoom from "@/views/pages/rooms/ManageRoom";
+import RoomStatus from "@/views/pages/rooms/RoomStatus";
 import type { RouteObject } from "react-router";
 import Login from "../views/pages/Login";
 import Signup from "../views/pages/Signup";
-import Navbar from "@/components/custome/Navbar";
-import AuthTemplate from "@/views/layout/AuthTemplate";
-import Otp from "@/views/pages/OTP";
-import Dashboard from "@/views/layout/DashboardTemplate";
-import ManageRoom from "@/views/pages/rooms/ManageRoom";
-import RoomStatus from "@/views/pages/rooms/RoomStatus";
-import { appPaths } from "@/assets/paths";
-import DashboardTemplate from "@/views/layout/DashboardTemplate";
-import DashboardMain from "@/views/pages/DashboardMain";
 
 
 export const appRoutes: RouteObject[] = [

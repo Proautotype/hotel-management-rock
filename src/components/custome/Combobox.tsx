@@ -1,33 +1,10 @@
 import { Popover, PopoverContent, PopoverTrigger } from '@radix-ui/react-popover'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Button } from '../ui/button'
 import { CheckIcon, ChevronsUpDownIcon } from 'lucide-react'
 import { Command, CommandEmpty } from '../ui/command'
 import { CommandGroup, CommandInput, CommandItem, CommandList } from 'cmdk'
 import { cn } from '@/lib/utils'
-
-const frameworks = [
-    {
-        value: "next.js",
-        label: "Next.js",
-    },
-    {
-        value: "sveltekit",
-        label: "SvelteKit",
-    },
-    {
-        value: "nuxt.js",
-        label: "Nuxt.js",
-    },
-    {
-        value: "remix",
-        label: "Remix",
-    },
-    {
-        value: "astro",
-        label: "Astro",
-    },
-]
 
 interface ComboboxDataFormat {
     value: string,

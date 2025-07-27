@@ -1,4 +1,3 @@
-import React from 'react'
 import appIcon  from '@/assets/appIcon.svg'
 import { Avatar, AvatarFallback, AvatarImage } from '@radix-ui/react-avatar'
 
