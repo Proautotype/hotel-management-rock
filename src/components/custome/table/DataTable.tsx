@@ -58,7 +58,7 @@ function DataTable<TData, TValue>({ data, columns }: DataTableProps<TData, TValu
                                 data-state={row.getIsSelected() && "selected"}
                             >
                                 {row.getVisibleCells().map((cell) => (
-                                    <TableCell key={cell.id}>
+                                    <TableCell key={cell.id} id={cell.id + (new Date()).getMilliseconds}>
                                         {flexRender(cell.column.columnDef.cell, cell.getContext())}
                                     </TableCell>
                                 ))}

@@ -12,8 +12,7 @@ export function ModeToggle() {
     const { setTheme } = useTheme()
 
     return (
-        <TooltipControl title="Change Theme">
-            <DropdownMenu >
+        <DropdownMenu >
                 <DropdownMenuTrigger asChild>
                     <Button variant={'outline'} size={'icon'} className="bg-background text-foreground border-0">
                         <Sun className="h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
@@ -30,7 +29,6 @@ export function ModeToggle() {
                     <DropdownMenuItem onClick={() => setTheme("system")}> <PcCaseIcon /> System </DropdownMenuItem>
                 </DropdownMenuContent>
             </DropdownMenu>
-        </TooltipControl>
 
     )
 

@@ -3,6 +3,7 @@ import { ModeToggle } from "@/components/mode-toggler"
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb"
 import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 import { Separator } from "@radix-ui/react-separator"
+import dayjs from "dayjs"
 import { Outlet, useNavigate } from "react-router"
 
 const DashboardTemplate = () => {
@@ -46,7 +47,11 @@ const DashboardTemplate = () => {
               </BreadcrumbList>
             </Breadcrumb>
           </div>
-          <ModeToggle />
+          <div >
+             <span className="mr-2">Date ({(dayjs().format('dddd, DD MMMM YYYY'))} )</span>
+             <ModeToggle />
+          </div>
+         
         </header>
         <main>
           <Outlet/>

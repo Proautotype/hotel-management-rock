@@ -1,10 +1,5 @@
 import React, { useEffect } from 'react'
-import { ModeToggle } from '../mode-toggler'
 import { Outlet, useNavigate } from 'react-router'
-import { Bell } from 'lucide-react'
-import { Button } from '../ui/button'
-import TooltipControl from './TooltipControl'
-import CustomeInput from './CustomeInput'
 import { appPaths } from '@/assets/paths'
 
 const Navbar = () => {
