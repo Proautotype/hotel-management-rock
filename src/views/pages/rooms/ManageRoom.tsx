@@ -303,6 +303,7 @@ const ManageRoom = () => {
     useState<VisibilityState>({})
   const [rowSelection, setRowSelection] = useState({})
 
+ /*
   const table = useReactTable({
     data: rooms,
     columns: manageRoomsColumns,
@@ -321,6 +322,7 @@ const ManageRoom = () => {
       rowSelection,
     },
   })
+ */
 
   return (
     <div className="p-1">
