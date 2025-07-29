@@ -86,8 +86,6 @@ const DashboardMain = () => {
         setToggleBooking((prev) => !prev)
     }
 
-
-
     const AvailableRoomsColumns: ColumnDef<AvailableRooms>[] = [
         {
             accessorKey: "room",
