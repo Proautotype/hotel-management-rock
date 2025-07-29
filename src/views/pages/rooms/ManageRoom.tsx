@@ -1,3 +1,4 @@
+import CustomeInput from "@/components/custome/CustomeInput"
 import DataTable from "@/components/custome/table/DataTable"
 import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
@@ -323,6 +324,7 @@ const ManageRoom = () => {
 
   return (
     <div className="p-1">
+      <CustomeInput title="Search" type="text" />
       <DataTable columns={manageRoomsColumns} data={rooms} />
     </div>
   )
