@@ -4,11 +4,13 @@ import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu"
 import {
-  getCoreRowModel,
-  getFilteredRowModel,
-  getPaginationRowModel,
-  getSortedRowModel,
-  useReactTable, type ColumnDef, type ColumnFiltersState, type SortingState, type VisibilityState,
+  // getCoreRowModel,
+  // getFilteredRowModel,
+  // getPaginationRowModel,
+  // getSortedRowModel,
+  // useReactTable, 
+  type ColumnDef, 
+  // type ColumnFiltersState, type SortingState, type VisibilityState,
 } from '@tanstack/react-table'
 import { ArrowDown, ArrowLeftRight, CogIcon, Copy, MoreHorizontal, Trash2 } from "lucide-react"
 import { useState } from "react"
@@ -142,7 +144,7 @@ const manageRoomsColumns: ColumnDef<ManageRoom>[] = [
 
 const ManageRoom = () => {
 
-  const [rooms, setRooms] = useState<ManageRoom[]>([
+  const [rooms] = useState<ManageRoom[]>([
     {
       id: "1",
       room: "101",
@@ -295,13 +297,13 @@ const ManageRoom = () => {
     }
   ])
 
-  const [sorting, setSorting] = useState<SortingState>([])
-  const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>(
-    []
-  )
-  const [columnVisibility, setColumnVisibility] =
-    useState<VisibilityState>({})
-  const [rowSelection, setRowSelection] = useState({})
+  // const [sorting, setSorting] = useState<SortingState>([])
+  // const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>(
+  //   []
+  // )
+  // const [columnVisibility, setColumnVisibility] =
+  //   useState<VisibilityState>({})
+  // const [rowSelection, setRowSelection] = useState({})
 
  /*
   const table = useReactTable({
