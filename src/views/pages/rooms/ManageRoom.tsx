@@ -2,13 +2,14 @@ import DataTable from "@/components/custome/table/DataTable"
 import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu"
-import { useReactTable, type ColumnDef, type ColumnFiltersState, type SortingState, type VisibilityState, 
-  flexRender,
+import {
   getCoreRowModel,
   getFilteredRowModel,
   getPaginationRowModel,
-  getSortedRowModel,} from '@tanstack/react-table'
-import { ActivityIcon, ArrowDown, ArrowLeftRight, ArrowUpDown, CogIcon, Copy, CopyCheck, MoreHorizontal, Pencil, Trash2 } from "lucide-react"
+  getSortedRowModel,
+  useReactTable, type ColumnDef, type ColumnFiltersState, type SortingState, type VisibilityState,
+} from '@tanstack/react-table'
+import { ArrowDown, ArrowLeftRight, CogIcon, Copy, MoreHorizontal, Trash2 } from "lucide-react"
 import { useState } from "react"
 
 enum RoomType {
